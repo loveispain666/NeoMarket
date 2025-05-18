@@ -1,0 +1,57 @@
+.card{
+    border: 0.5vh rgb(0, 0, 0) solid;
+    border-radius: 3vh;
+    padding: 1vh;
+    width: 17vw;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(133, 133, 133);
+    user-select: none;
+}
+
+.card img{
+    object-fit: contain;
+    width: 100%;
+    border-radius: 2vh;
+    pointer-events: none;
+}
+
+.title{
+    font-size: min(3vh, 1.5vw);
+    font-weight: 800;
+    
+}
+
+.price{
+    font-size: min(2vh, 1vw);
+    font-weight: 800;
+}
+
+.desc{
+    font-size: min(1.8vh, 0.9vw);
+    font-weight: 800;
+    text-align: center;
+}
+
+.add{
+    width: 8.5vw;
+    height: 3vh;
+    background-color: rgb(150, 206, 216);
+    border: none;
+    border-radius: 1vh;
+    font-size: min(1.8vh, 0.9vw);
+    margin-top: 1vh;
+    
+}
+
+.add:hover{
+    cursor: pointer;
+    background-color: rgb(125, 172, 180);
+}
+
+.avalible{
+    margin-top: 1vh;
+    font-size: min(2vh, 1vw);
+}
