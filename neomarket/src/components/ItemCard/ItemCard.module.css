@@ -1,14 +1,14 @@
 .card{
-    border: 0.5vh rgb(0, 0, 0) solid;
-    border-radius: 3vh;
+    border-radius: 2vh;
     padding: 1vh;
-    width: 17vw;
-    height: 60vh;
+    width: 15vw;
+    height: 40vh;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(133, 133, 133);
+    background-color: #1F1F1F;
     user-select: none;
+    transition: background-color 0.3s;
 }
 
 .card img{
@@ -18,40 +18,32 @@
     pointer-events: none;
 }
 
+.card:hover{
+    cursor: pointer;
+    background-color: #2A2A2A;
+}
+
 .title{
-    font-size: min(3vh, 1.5vw);
+    font-size: min(2vh, 1vw);
     font-weight: 800;
-    
+    text-align: left;
+    color: #E0E0E0;
+    padding-top: 1vh;
+    transition: color 0.3s;
 }
 
 .price{
     font-size: min(2vh, 1vw);
     font-weight: 800;
+    margin-top: 0.5vh;
+    color: #E0E0E0; 
+    transition: color 0.3s;
 }
 
-.desc{
-    font-size: min(1.8vh, 0.9vw);
-    font-weight: 800;
-    text-align: center;
+.card:hover .price{
+    color: #ffffff;
 }
 
-.add{
-    width: 8.5vw;
-    height: 3vh;
-    background-color: rgb(150, 206, 216);
-    border: none;
-    border-radius: 1vh;
-    font-size: min(1.8vh, 0.9vw);
-    margin-top: 1vh;
-    
-}
-
-.add:hover{
-    cursor: pointer;
-    background-color: rgb(125, 172, 180);
-}
-
-.avalible{
-    margin-top: 1vh;
-    font-size: min(2vh, 1vw);
+.card:hover .title{
+    color: #ffffff;
 }
