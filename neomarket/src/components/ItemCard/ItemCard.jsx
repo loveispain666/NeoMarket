@@ -1,17 +1,25 @@
 import React from 'react'
 import styles from './ItemCard.module.css'
 
-const ItemCard = ({ title, price, imgName = false }) => {
-    return (
-        <section className={styles.card}>
-            <img src={`${process.env.PUBLIC_URL}/imgs/${imgName}`} alt="failed load img" />
+const ItemCard = () => {
+	const cardtext = `50 Гб за 300 руб/мес сим карта тарифный план t2 для 3G 4G LTE телефона
+					теле2 tele2 т2 безлимитные соцсети и мессенджеры`
 
-            <div>
-                <div className={styles.title}>{title.length>50 ? title.slice(0, 37) + '...' : title}</div>
-                <div className={styles.price}>{price}$</div>
-            </div>
-        </section>
-    )
+	const cost = '91'
+
+	return (
+		<div className={styles.card}>
+			<div className={styles.cardImg}>
+				<img src={`${process.env.PUBLIC_URL}imgs/Cat.jpg`} />
+			</div>
+			<div className={styles.cardBottom}>
+				<div className={styles.cardName}>
+					{cardtext.length > 65 ? cardtext.slice(0, 62) + '...' : cardtext}
+				</div>
+				<div className={styles.cardCost}>{cost} ₽</div>
+			</div>
+		</div>
+	)
 }
 
 export default ItemCard

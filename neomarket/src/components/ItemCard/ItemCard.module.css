@@ -1,49 +1,44 @@
-.card{
-    border-radius: 2vh;
-    padding: 1vh;
-    width: 15vw;
-    height: 40vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #1F1F1F;
-    user-select: none;
-    transition: background-color 0.3s;
+.card {
+	width: 280px;
+	height: 420px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: left;
+	cursor: pointer;
+	user-select: none;
 }
 
-.card img{
-    object-fit: contain;
-    width: 100%;
-    border-radius: 2vh;
-    pointer-events: none;
+.cardImg {
+	width: 260px;
+	height: 320px;
+	margin-top: 8px;
 }
 
-.card:hover{
-    cursor: pointer;
-    background-color: #2A2A2A;
+.cardImg > img {
+	width: 100%;
+	height: 100%;
+	border-radius: 2vh;
+	pointer-events: none;
 }
 
-.title{
-    font-size: min(2vh, 1vw);
-    font-weight: 800;
-    text-align: left;
-    color: #E0E0E0;
-    padding-top: 1vh;
-    transition: color 0.3s;
+.cardName {
+	color: white;
+	font-size: 16px;
+	margin-left: 8px;
+	margin-top: 10px;
+	font-weight: 500;
 }
 
-.price{
-    font-size: min(2vh, 1vw);
-    font-weight: 800;
-    margin-top: 0.5vh;
-    color: #E0E0E0; 
-    transition: color 0.3s;
+.cardCost {
+	color: seagreen;
+	margin-left: 8px;
+	margin-top: 5px;
+	font-size: 20px;
+	font-weight: 900;
 }
 
-.card:hover .price{
-    color: #ffffff;
-}
-
-.card:hover .title{
-    color: #ffffff;
+.card:hover {
+	background-color: #1d1d1d;
 }
