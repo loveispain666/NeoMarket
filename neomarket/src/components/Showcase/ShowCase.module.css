@@ -1,4 +1,10 @@
 .row {
     display: flex;
-    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.row:last-of-type {
+    margin-bottom: 4vw;
 }

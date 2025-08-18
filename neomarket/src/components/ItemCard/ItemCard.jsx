@@ -18,7 +18,7 @@ const ItemCard = ({ text, price, img }) => {
 			<div className={styles.cardAdd}>{likeSvg}</div>
 			<div className={styles.cardBottom}>
 				<div className={styles.cardName}>
-					{text.length > 65 ? text.slice(0, 62) + '...' : text}
+					{text.length > 52 ? text.slice(0, 52) + '...' : text}
 				</div>
 				<div className={styles.cardCost}>{price} ₽</div>
 			</div>
